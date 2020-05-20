@@ -1,0 +1,59 @@
+#bloc_page{                                 /*  la page       */
+    width: 100%;
+    max-width: 1021px;
+    height: 500px;
+    margin: auto;
+    color: #607D8B;
+}
+header{
+    background-color: green;
+    text-align: center;
+}
+section{
+	display: flex;
+	justify-content: space-around;
+    align-items: center;
+}
+#note{
+    width: 30%;
+    text-align: center;
+}
+#chic{
+    width: 30%;
+    text-align: center;
+}
+#delice{
+    width: 30%;
+    text-align: center;
+}
+#palette{
+    width: 30%;
+    text-align: center;
+}
+div{
+    border: 1px #B0BEC5 solid;
+}
+#bas{
+    margin-top: 20px;
+}
+
+#prochenement{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    margin-top: 25px;
+}
+
+footer{
+    display: flex;
+    justify-content: space-around;
+}
+
+
+
+
+
+
+
+
