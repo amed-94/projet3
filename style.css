@@ -1,58 +1,116 @@
 #bloc_page{                                 /*  la page       */
     width: 100%;
     max-width: 1021px;
-    height: 500px;
     margin: auto;
     color: #607D8B;
 }
 header{
     background-color: green;
     text-align: center;
+    height: 80px;
+    padding-top: 9px;
+    color: #FFC107;
 }
 section{
 	display: flex;
-	justify-content: space-around;
+	justify-content: center;
     align-items: center;
 }
+#haut{
+    margin-top: 35px;
+}
 #note{
-    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    width: 20%;
     text-align: center;
+    background-color: #ffcdd2;
+    height: 250px;
+    border: 1px #ffcdd2 solid;
+    border-radius: 5px;
+    box-shadow:  0 0 9px #B0BEC5;
 }
 #chic{
-    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    width: 20%;
     text-align: center;
+    height: 250px;
+    border: 1px #ffebee solid;
+    border-radius: 5px;
+    background-color: #ffebee;
+    margin-left:25px;
+    box-shadow:  0 0 9px #B0BEC5;
 }
 #delice{
-    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    width: 20%;
     text-align: center;
+    height: 250px;
+    border: 1px #F3E5F5 solid;
+    border-radius: 5px;
+    background-color: #F3E5F5;
+    box-shadow:  0 0 9px #B0BEC5;
 }
 #palette{
-    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    width: 20%;
     text-align: center;
+    height: 250px;
+    border: 1px #FAFAFA solid;
+    border-radius: 5px;
+    background-color: #FAFAFA;
+    margin-left:25px;
+    box-shadow:  0 0 9px #B0BEC5;
 }
-div{
-    border: 1px #B0BEC5 solid;
-}
+
 #bas{
-    margin-top: 20px;
+    margin-top: 30px;
 }
 
 #prochenement{
     display: flex;
     justify-content: center;
     align-content: center;
+    width: 220px;
+    margin-left: 320px;
     text-align: center;
     margin-top: 25px;
+    background-color: #009688;
+    border: 1px #009688 solid;
+    border-radius: 15px;
 }
-
+ #prochenement a{
+    color: #FFC107;
+}
 footer{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    margin-top: 30px;
+    background-color: #009688;
+    color: #FFC107;
 }
-
-
-
-
+footer a{
+    color: #FFC107;
+}
+#mention{
+    margin-left: 15px;
+}
+#contacte{
+    margin-right: 15px;
+}
+a{
+    text-decoration: none;
+}
+#picto{
+    font-size: 1.9em;
+}
 
 
 
