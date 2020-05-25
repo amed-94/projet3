@@ -1,15 +1,23 @@
+body{
+    margin: 0;
+}
 #bloc_page{                                 /*  la page       */
     width: 100%;
-    max-width: 1021px;
     margin: auto;
     color: #607D8B;
 }
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
 header{
-    background-color: green;
+    background-color: #2e6f5b;
     text-align: center;
     height: 80px;
     padding-top: 9px;
-    color: #FFC107;
+    color: #fdcb46;
 }
 section{
 	display: flex;
@@ -17,93 +25,100 @@ section{
     align-items: center;
 }
 #haut{
-    margin-top: 35px;
+    margin: 40px 0px 40px 0px;
 }
+#bas{
+    
+}
+
 #note{
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items:center;
-    width: 20%;
+    width: 250px;
+    height: 350px;
     text-align: center;
-    background-color: #ffcdd2;
-    height: 250px;
+    background-color: #fcdfdb;
     border: 1px #ffcdd2 solid;
     border-radius: 5px;
     box-shadow:  0 0 9px #B0BEC5;
+    margin: 0px 20px 0px 0px;
 }
 #chic{
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items:center;
-    width: 20%;
+    width: 250px;
+    height: 350px;
     text-align: center;
-    height: 250px;
     border: 1px #ffebee solid;
     border-radius: 5px;
-    background-color: #ffebee;
+    background-color: #fff5fe;
     margin-left:25px;
     box-shadow:  0 0 9px #B0BEC5;
 }
 #delice{
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items:center;
-    width: 20%;
+    width: 250px;
+    height: 350px;
     text-align: center;
-    height: 250px;
     border: 1px #F3E5F5 solid;
     border-radius: 5px;
-    background-color: #F3E5F5;
+    background-color: #fdfffd;
     box-shadow:  0 0 9px #B0BEC5;
+    margin: 0px 20px 0px 0px;
 }
 #palette{
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items:center;
-    width: 20%;
+    width: 250px;
+    height: 350px;
     text-align: center;
-    height: 250px;
     border: 1px #FAFAFA solid;
     border-radius: 5px;
-    background-color: #FAFAFA;
+    background-color: #fdfffd;
     margin-left:25px;
     box-shadow:  0 0 9px #B0BEC5;
 }
 
-#bas{
-    margin-top: 30px;
-}
-
-#prochenement{
-    display: flex;
-    justify-content: center;
-    align-content: center;
+#prochainement{
     width: 220px;
-    margin-left: 320px;
     text-align: center;
     margin-top: 25px;
-    background-color: #009688;
+    background-color: #2e6f5b;
     border: 1px #009688 solid;
     border-radius: 15px;
+    margin: 40px 0px 80px 0px;
 }
- #prochenement a{
-    color: #FFC107;
+ #prochainement a{
+    color: #fdcb46;
 }
 footer{
     display: flex;
     justify-content: space-between;
     margin-top: 30px;
-    background-color: #009688;
-    color: #FFC107;
+    background-color: #2e6f5b;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
 }
 footer a{
-    color: #FFC107;
+    color: #fdcb46;
 }
-#mention{
-    margin-left: 15px;
+
+#mentions{
+    margin-left: 35px;
 }
 #contacte{
-    margin-right: 15px;
+    margin-right: 35px;
 }
 a{
     text-decoration: none;
@@ -111,7 +126,7 @@ a{
 #picto{
     font-size: 1.9em;
 }
-
+/*    le responsive      */
 
 
 
