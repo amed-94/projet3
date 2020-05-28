@@ -1,3 +1,10 @@
+body{
+    margin: 0;
+}
+#food a{
+  color: #FFC107;
+  text-decoration: none;
+}
 #food{
     background-color: #009688;
     text-align: center;
@@ -5,13 +12,20 @@
     padding-top: 9px;
     color: #FFC107;
 }
-#note{
-  background-color: #ffcdd2;
-  width: 90%;
-  margin: 55px;
+h2{
+  display: flex;
+  justify-content: center;
 }
-#fond{
-  margin: 50px;
+                                        /* la note  */
+#note{
+  display: flex;
+  justify-content: center;
+  width: 70%;
+  background-color: #ffcdd2;
+  margin: 1% 10% 10% 15%;*/
+}
+#fond{ 
+  width: 800px;
 }
 
 section header{
@@ -24,10 +38,6 @@ section header{
 .titre{
   display: flex;
   justify-content: center;
-}
-.menu{
-  display: flex;
-  flex-direction: column;
 }
 .prix{
   display: flex;
@@ -46,13 +56,51 @@ section footer{
   padding-top: 16px;
   margin-right: 9px;
 }
+.gauche{
+  
+}
+                                        /*  le chic */
+#chic{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff5fe;
+  width: 80%;
+  height: 100%;
+  margin: 1% 10% 13% 10%;
+}
+                                    /*   le délice   */
+#delice{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fdfffd;
+  width: 80%;
+  height: 100%;
+  margin: 1% 10% 13% 10%;
+}
+
+                                      /*    la palette    */
+#palette{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fdfffd;
+  width: 80%;
+  height: 100%;
+  margin: 1% 10% 13% 10%;
+}
+
 #pied{
     display: flex;
     justify-content: space-between;
-    margin-top: 30px;
-    background-color: #009688;
-    color: #FFC107;
+    background-color: #2e6f5b;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
 }
+
 footer a{
     color: #FFC107;
     text-decoration: none;
@@ -62,4 +110,101 @@ footer a{
 }
 #contacte{
     margin-right: 15px;
+}
+                              /*    le responsive      */
+
+@media screen and (max-width: 800px){
+  .aligne p{
+    display: flex;
+    justify-content: center;
+  }
+  .aligne{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;  
+  }
+  .prix{
+    display: flex;
+    justify-content: center;
+    padding: 0;
+  }
+  #pied{
+    display: flex;
+    justify-content: space-between;
+    background-color: #2e6f5b;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+}
+@media screen and (max-width: 800px){
+   #note{
+      margin-bottom: 50px;
+  }
+  #chic{
+    margin-bottom: 50px;
+  }
+  #delice{
+    margin-bottom: 50px;
+  }
+  #palette{
+    margin-bottom: 50px;
+  }
+}
+@media screen and (max-width: 670px){
+  #pied{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  #note{
+    margin-bottom: 150px;
+  }
+  #chic{
+    margin-bottom: 50px;
+  }
+  #delice{
+    margin-bottom: 150px;
+  }
+  #palette{
+    margin-bottom: 150px;
+  }
+  #mention{
+    margin: 20px 0 0 0;
+  }
+  #contacte{
+    margin: 20px 0 15px 0;
+  }
+  #pied{
+    display: flex;
+    justify-content: space-between;
+    background-color: #2e6f5b;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+}
+@media screen and (max-width: 584px){
+  #fond{ 
+    width: 100%;
+  }
+   #note{
+     width: 100%;
+     margin: 0 0 150px 0;
+  }
+  #chic{
+    width: 100%;
+    margin: 0 0 150px 0;
+  }
+  #delice{
+    width: 100%;
+    margin: 0 0 150px 0;
+  }
+  #palette{
+    width: 100%;
+    margin: 0 0 150px 0;
+  }
 }
