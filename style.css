@@ -1,3 +1,29 @@
+                    /*      les polices         */
+@font-face {
+    font-family: 'playtimewithhottoddiesobliqRg';
+    src: url('Fonts/PlaytimeOblique-webfont.eot');
+    src: url('Fonts/PlaytimeOblique-webfont.eot?#iefix') format('embedded-opentype'),
+         url('Fonts/PlaytimeOblique-webfont.woff2') format('woff2'),
+         url('Fonts/PlaytimeOblique-webfont.woff') format('woff'),
+         url('Fonts/PlaytimeOblique-webfont.ttf') format('truetype'),
+         url('Fonts/PlaytimeOblique-webfont.svg#playtimewithhottoddiesobliqRg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'eczarregular';
+    src: url('Fonts/Eczar-Regular-webfont.eot');
+    src: url('Fonts/Eczar-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('Fonts/Eczar-Regular-webfont.woff2') format('woff2'),
+         url('Fonts/Eczar-Regular-webfont.woff') format('woff'),
+         url('Fonts/Eczar-Regular-webfont.ttf') format('truetype'),
+         url('Fonts/Eczar-Regular-webfont.svg#eczarregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
 body{
     margin: 0;
 }
@@ -13,9 +39,9 @@ main{
     justify-content: center;
 }
 header{
-    background-color: #2e6f5b;
+    background-color: #579c87;
     text-align: center;
-    height: 80px;
+    height: 99px;
     padding-top: 9px;
     color: #fdcb46;
 }
@@ -30,7 +56,47 @@ section{
 #bas{
     
 }
-
+                /*    les polices  et le dégradé de couleur    */
+#note p{
+    font-family:'playtimewithhottoddiesobliqRg';
+    color: #3c1218;
+}
+#note h2{
+    font-family: 'eczarregular';
+}
+#chic h2{
+    background: linear-gradient(to right, #d8852e, #905bfd);
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+#chic p{
+    color: #c77412;
+}
+#delice h2{
+    background: linear-gradient(to right, #2140df, #0887fb);
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+#delice p{
+    color: #0887fb
+}
+#palette h2{
+    background: linear-gradient(to right, #42973c, #bfff7e);
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+#palette p{
+    color: #72bf56;
+}
+#picto{
+    background: linear-gradient(to right, #f15861, #f78f6a);
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+}
 #note{
     display: flex;
     flex-direction: column;
@@ -45,6 +111,7 @@ section{
     box-shadow:  0 0 9px #B0BEC5;
     margin: 0px 20px 0px 0px;
 }
+              /*   la page chic à la française   */
 #chic{
     display: flex;
     flex-direction: column;
@@ -58,6 +125,12 @@ section{
     background-color: #fff5fe;
     margin-left:25px;
     box-shadow:  0 0 9px #B0BEC5;
+}
+#chic h2{
+    background: linear-gradient(to right, #d8852e, #905bfd);
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
 }
 #delice{
     display: flex;
@@ -89,22 +162,23 @@ section{
 }
 
 #prochainement{
-    width: 220px;
+    width: 23%;
     text-align: center;
     margin-top: 25px;
-    background-color: #2e6f5b;
+    background-color: #579c87;
     border: 1px #009688 solid;
     border-radius: 15px;
     margin: 40px 0px 80px 0px;
 }
  #prochainement a{
-    color: #fdcb46;
+     color: #fdcb46;
+     font-size: 1.3em;
 }
 footer{
     display: flex;
     justify-content: space-between;
     margin-top: 30px;
-    background-color: #2e6f5b;
+    background-color: #579c87;
     position: fixed;
     bottom: 0;
     left: 0;
@@ -116,9 +190,11 @@ footer a{
 
 #mentions{
     margin-left: 35px;
+    font-size: 1.3em;
 }
 #contacte{
     margin-right: 35px;
+    font-size: 1.3em;
 }
 a{
     text-decoration: none;
@@ -133,8 +209,7 @@ a{
         display: flex;
         flex-direction: column;
         align-items: center;
-        justify-content:space-between;
-       
+        justify-content:space-between;  
     }
     #bas{
         display: flex;
@@ -142,22 +217,21 @@ a{
         justify-content: center;
         align-content: center;
     }
-    #note{
+    #prochainement{
+        width: 30%;
+        margin: 40px 0 110px;
+    }
+    #note,#delice{
         margin: 0 0 40px;
     }
-    #chic{
+    #chic,#palette {
         margin: 0;
-    }
-    #delice{
-        margin: 0 0 40px;
-    }
-    #palette{
-        margin: 0;
-    }
+    } 
 }
 
-@media screen and (max-width: 450px){
+@media screen and (max-width: 538px){
     #prochainement{
+        width: 40%;
         margin: 40px 0 110px;
     }
     

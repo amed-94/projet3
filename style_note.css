@@ -1,3 +1,20 @@
+							/*		les polices 		*/
+@font-face {
+    font-family: 'playtimewithhottoddiesobliqRg';
+    src: url('Fonts/PlaytimeOblique-webfont.eot');
+    src: url('Fonts/PlaytimeOblique-webfont.eot?#iefix') format('embedded-opentype'),
+         url('Fonts/PlaytimeOblique-webfont.woff2') format('woff2'),
+         url('Fonts/PlaytimeOblique-webfont.woff') format('woff'),
+         url('Fonts/PlaytimeOblique-webfont.ttf') format('truetype'),
+         url('Fonts/PlaytimeOblique-webfont.svg#playtimewithhottoddiesobliqRg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
 #food{
     background-color: #009688;
     text-align: center;
