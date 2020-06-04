@@ -8,7 +8,7 @@ body{
 #food{
     background-color: #009688;
     text-align: center;
-    height: 80px;
+    height: 99px;
     padding-top: 9px;
     color: #FFC107;
 }
@@ -16,16 +16,10 @@ h2{
   display: flex;
   justify-content: center;
 }
-                                        /* la note  */
-#note{
-  display: flex;
-  justify-content: center;
-  width: 70%;
-  background-color: #ffcdd2;
-  margin: 1% 10% 10% 15%;*/
-}
+
 #fond{ 
-  width: 800px;
+  width: 90%;
+  height: 900px;
 }
 
 section header{
@@ -52,45 +46,85 @@ section footer{
   display: flex;
   justify-content: center;
 }
+                                        /* la page note enchantée */
+#note{
+  display: flex;
+  justify-content: center;
+  width: 80%;
+  background-color: #ffcdd2;
+  margin: 1% 10% 10% 15%;*/
+}
+hr {
+  
+  width: 420px;
+  height: 2px;
+  content: ""; 
+  height: 30px; 
+  border-style: outset; 
+  border-width: 0 0 3px 0; 
+  border-radius: 10px; 
+}
+
 #picto{
-  padding-top: 16px;
-  margin-right: 9px;
+  font-size: 1.9em;
+  padding-top: 14px;
+  margin-right: 10px;
+  background: linear-gradient(to right, #f15861, #f78f6a);
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
 }
 .gauche{
   
 }
-                                        /*  le chic */
+                                        /*  la page chic à la française */
 #chic{
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: #fff5fe;
   width: 80%;
-  height: 100%;
   margin: 1% 10% 13% 10%;
 }
-                                    /*   le délice   */
+#chic header h2 {
+    background: linear-gradient(to right, #d8852e, #905bfd);
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    font-size: 2.9em;
+}
+                                    /*   la page le délice des papilles   */
 #delice{
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: #fdfffd;
   width: 80%;
-  height: 100%;
   margin: 1% 10% 13% 10%;
 }
-
-                                      /*    la palette    */
+#delice header h2{
+    background: linear-gradient(to right, #2140df, #0887fb);
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    font-size: 2.9em;
+}
+                                      /*    la page palette du goût   */
 #palette{
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: #fdfffd;
   width: 80%;
-  height: 100%;
   margin: 1% 10% 13% 10%;
 }
-
+#palette header h2{
+    background: linear-gradient(to right, #42973c, #bfff7e);
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    font-size: 2.9em;
+}
 #pied{
     display: flex;
     justify-content: space-between;
@@ -102,8 +136,9 @@ section footer{
 }
 
 footer a{
-    color: #FFC107;
-    text-decoration: none;
+  color: #FFC107;
+  text-decoration: none;
+  font-size: 1.3em;
 }
 #mention{
     margin-left: 15px;
@@ -111,6 +146,17 @@ footer a{
 #contacte{
     margin-right: 15px;
 }
+.ligne{
+  display: flex;
+  justify-content: center;
+}
+.gauche{
+  
+} 
+.droite{
+   
+}
+
                               /*    le responsive      */
 
 @media screen and (max-width: 800px){
@@ -139,37 +185,18 @@ footer a{
   }
 }
 @media screen and (max-width: 800px){
-   #note{
-      margin-bottom: 50px;
+   #note, #chic, #delice, #palette{
+      margin-bottom: 115px;
   }
-  #chic{
-    margin-bottom: 50px;
-  }
-  #delice{
-    margin-bottom: 50px;
-  }
-  #palette{
-    margin-bottom: 50px;
+    #fond{ 
+    width: 90%;
+    height: 100%;
   }
 }
 @media screen and (max-width: 670px){
-  #pied{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  #note{
-    margin-bottom: 150px;
-  }
-  #chic{
-    margin-bottom: 50px;
-  }
-  #delice{
-    margin-bottom: 150px;
-  }
-  #palette{
-    margin-bottom: 150px;
+  #fond{ 
+    width: 90%;
+    height: 100%;
   }
   #mention{
     margin: 20px 0 0 0;
@@ -189,22 +216,22 @@ footer a{
 }
 @media screen and (max-width: 584px){
   #fond{ 
-    width: 100%;
+    width: 90%;
+    height: 100%;
   }
-   #note{
+   #note, #chic, #delice, #pallette{
      width: 100%;
-     margin: 0 0 150px 0;
+     margin: 0 0 125px 0;
   }
-  #chic{
-    width: 100%;
-    margin: 0 0 150px 0;
-  }
-  #delice{
-    width: 100%;
-    margin: 0 0 150px 0;
-  }
-  #palette{
-    width: 100%;
-    margin: 0 0 150px 0;
+  #pied{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #2e6f5b;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
   }
 }
