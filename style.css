@@ -1,28 +1,3 @@
-                    /*      les polices         */
-@font-face {
-    font-family: 'playtimewithhottoddiesobliqRg';
-    src: url('Fonts/PlaytimeOblique-webfont.eot');
-    src: url('Fonts/PlaytimeOblique-webfont.eot?#iefix') format('embedded-opentype'),
-         url('Fonts/PlaytimeOblique-webfont.woff2') format('woff2'),
-         url('Fonts/PlaytimeOblique-webfont.woff') format('woff'),
-         url('Fonts/PlaytimeOblique-webfont.ttf') format('truetype'),
-         url('Fonts/PlaytimeOblique-webfont.svg#playtimewithhottoddiesobliqRg') format('svg');
-    font-weight: normal;
-    font-style: normal;
-
-}
-@font-face {
-    font-family: 'eczarregular';
-    src: url('Fonts/Eczar-Regular-webfont.eot');
-    src: url('Fonts/Eczar-Regular-webfont.eot?#iefix') format('embedded-opentype'),
-         url('Fonts/Eczar-Regular-webfont.woff2') format('woff2'),
-         url('Fonts/Eczar-Regular-webfont.woff') format('woff'),
-         url('Fonts/Eczar-Regular-webfont.ttf') format('truetype'),
-         url('Fonts/Eczar-Regular-webfont.svg#eczarregular') format('svg');
-    font-weight: normal;
-    font-style: normal;
-
-}
 
 body{
     margin: 0;
@@ -44,6 +19,8 @@ header{
     height: 99px;
     padding-top: 9px;
     color: #fdcb46;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 1.3em;
 }
 section{
 	display: flex;
@@ -58,38 +35,53 @@ section{
 }
                 /*    les polices  et le dégradé de couleur    */
 #note p{
-    font-family:'playtimewithhottoddiesobliqRg';
-    color: #3c1218;
+    color: #3D1319;
+    font-size: 1.8em;
+    margin: 0;
 }
 #note h2{
-    font-family: 'eczarregular';
+    font-family: 'Devonshire', cursive;
+    color: #3D1319;
 }
 #chic h2{
     background: linear-gradient(to right, #d8852e, #905bfd);
     color: transparent;
     background-clip: text;
     -webkit-background-clip: text;
+    font-family: 'Croissant One', cursive;
+    font-size: 1.2em;
 }
 #chic p{
     color: #c77412;
+    font-family: 'DM Serif Display', serif;
+    font-size: 1.8em;
+    margin: 0;
 }
 #delice h2{
     background: linear-gradient(to right, #2140df, #0887fb);
     color: transparent;
     background-clip: text;
     -webkit-background-clip: text;
+    font-family: 'Dancing Script', cursive;
 }
 #delice p{
-    color: #0887fb
+    color: #0887fb;
+    font-family: 'Paprika', cursive;
+    font-size: 1.8em;
+    margin: 0;
 }
 #palette h2{
     background: linear-gradient(to right, #42973c, #bfff7e);
     color: transparent;
     background-clip: text;
     -webkit-background-clip: text;
+    font-family: 'Kaushan Script', cursive;
 }
 #palette p{
     color: #72bf56;
+    font-family: 'Paprika', cursive;
+    font-size: 1.8em;
+    margin: 0;
 }
 #picto{
     background: linear-gradient(to right, #f15861, #f78f6a);
