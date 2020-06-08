@@ -4,6 +4,8 @@ body{
 #food a{
   color: #FFC107;
   text-decoration: none;
+  font-family: 'Work Sans', sans-serif;
+  font-size: 1.3em;
 }
 #food{
     background-color: #009688;
@@ -19,7 +21,7 @@ h2{
 
 #fond{ 
   width: 90%;
-  height: 900px;
+  height: 100%;
 }
 
 section header{
@@ -47,23 +49,6 @@ section footer{
   justify-content: center;
 }
                                         /* la page note enchantée */
-#note{
-  display: flex;
-  justify-content: center;
-  width: 80%;
-  background-color: #ffcdd2;
-  margin: 1% 10% 10% 15%;*/
-}
-hr {
-  
-  width: 420px;
-  height: 2px;
-  content: ""; 
-  height: 30px; 
-  border-style: outset; 
-  border-width: 0 0 3px 0; 
-  border-radius: 10px; 
-}
 
 #picto{
   font-size: 1.9em;
@@ -74,8 +59,24 @@ hr {
   background-clip: text;
   -webkit-background-clip: text;
 }
-.gauche{
-  
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#note{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  margin-bottom: 9%;
+  background-color: #ffcdd2;
+}
+#note header h2{
+  font-size: 3em;
+  font-family: 'Devonshire', cursive;
 }
                                         /*  la page chic à la française */
 #chic{
@@ -84,14 +85,18 @@ hr {
   align-items: center;
   background-color: #fff5fe;
   width: 80%;
-  margin: 1% 10% 13% 10%;
+  margin-bottom: 9%;
 }
 #chic header h2 {
     background: linear-gradient(to right, #d8852e, #905bfd);
     color: transparent;
     background-clip: text;
     -webkit-background-clip: text;
+    font-family: 'Croissant One', cursive;
     font-size: 2.9em;
+}
+#chic p{
+  font-family: 'Gentium Book Basic', serif;
 }
                                     /*   la page le délice des papilles   */
 #delice{
@@ -100,13 +105,14 @@ hr {
   align-items: center;
   background-color: #fdfffd;
   width: 80%;
-  margin: 1% 10% 13% 10%;
+  margin-bottom: 9%;
 }
 #delice header h2{
     background: linear-gradient(to right, #2140df, #0887fb);
     color: transparent;
     background-clip: text;
     -webkit-background-clip: text;
+    font-family: 'Dancing Script', cursive;
     font-size: 2.9em;
 }
                                       /*    la page palette du goût   */
@@ -116,13 +122,14 @@ hr {
   align-items: center;
   background-color: #fdfffd;
   width: 80%;
-  margin: 1% 10% 13% 10%;
+  margin-bottom: 9%;
 }
 #palette header h2{
     background: linear-gradient(to right, #42973c, #bfff7e);
     color: transparent;
     background-clip: text;
     -webkit-background-clip: text;
+    font-family: 'Kaushan Script', cursive;
     font-size: 2.9em;
 }
 #pied{
@@ -148,13 +155,17 @@ footer a{
 }
 .ligne{
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
 }
 .gauche{
-  
+  width: 29%;
+  display: flex;
+  justify-content: center;
 } 
 .droite{
-   
+  width: 29%;
+  display: flex;
+  justify-content: center;
 }
 
                               /*    le responsive      */
