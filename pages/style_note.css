@@ -14,6 +14,7 @@ body{
     padding-top: 9px;
     color: #FFC107;
 }
+                                  /*   pour touts les pages     */
 h2{
   display: flex;
   justify-content: center;
@@ -30,7 +31,23 @@ section header{
   justify-content: center;
   align-items: center;
 }
+footer a{
+  color: #FFC107;
+  text-decoration: none;
+  font-size: 1.3em;
+}
+#mention{
+    margin-left: 15px;
+}
+#contacte{
+    margin-right: 15px;
+}
 
+                                              /*   alignement du menu et le prix     */
+.aligne{
+  display: flex;
+  justify-content:space-between;
+}
 .titre{
   display: flex;
   justify-content: center;
@@ -40,15 +57,15 @@ section header{
   justify-content: flex-end;
   padding-top: 15px;
 }
-.aligne{
-  display: flex;
-  justify-content:space-between;
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
-section footer{
-  display: flex;
-  justify-content: center;
-}
+
                                         /* la page note enchantée */
+
 
 #picto{
   font-size: 1.9em;
@@ -58,12 +75,6 @@ section footer{
   color: transparent;
   background-clip: text;
   -webkit-background-clip: text;
-}
-main{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
 }
 #note{
   display: flex;
@@ -77,6 +88,10 @@ main{
 #note header h2{
   font-size: 3em;
   font-family: 'Devonshire', cursive;
+}
+section footer{
+  display: flex;
+  justify-content: center;
 }
                                         /*  la page chic à la française */
 #chic{
@@ -132,6 +147,7 @@ main{
     font-family: 'Kaushan Script', cursive;
     font-size: 2.9em;
 }
+                                        /*   le pied de page   */
 #pied{
     display: flex;
     justify-content: space-between;
@@ -141,18 +157,7 @@ main{
     left: 0;
     right: 0;
 }
-
-footer a{
-  color: #FFC107;
-  text-decoration: none;
-  font-size: 1.3em;
-}
-#mention{
-    margin-left: 15px;
-}
-#contacte{
-    margin-right: 15px;
-}
+                                      /*  positionement des lignes    */
 .ligne{
   display: flex;
   justify-content: space-between;
@@ -193,17 +198,19 @@ footer a{
     bottom: 0;
     left: 0;
     right: 0;
-  }
-}
-@media screen and (max-width: 800px){
-   #note, #chic, #delice, #palette{
+    }
+     #note, #chic, #delice, #palette{
       margin-bottom: 115px;
-  }
+    }
     #fond{ 
     width: 90%;
     height: 100%;
   }
+  .h2{
+    font-size: 0.5em
+  }
 }
+
 @media screen and (max-width: 670px){
   #fond{ 
     width: 90%;
@@ -245,4 +252,5 @@ footer a{
     left: 0;
     right: 0;
   }
+ 
 }

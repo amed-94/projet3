@@ -33,7 +33,7 @@ section{
 #bas{
     
 }
-                /*    les polices  et le dégradé de couleur    */
+                /*    les polices  et le dégradé de couleur     */
 #note p{
     color: #3D1319;
     font-size: 1.8em;
@@ -83,13 +83,15 @@ section{
     font-size: 1.8em;
     margin: 0;
 }
+                                 /*    le pictograme de la note   */
 #picto{
     background: linear-gradient(to right, #f15861, #f78f6a);
     color: transparent;
     background-clip: text;
     -webkit-background-clip: text;
 }
-#note{
+                                     /*   les bloques    */
+#note, #chic, #delice, #palette{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -97,62 +99,39 @@ section{
     width: 250px;
     height: 350px;
     text-align: center;
-    background-color: #fcdfdb;
-    border: 1px #ffcdd2 solid;
     border-radius: 5px;
     box-shadow:  0 0 9px #B0BEC5;
+}
+#note{
+    border: 1px #ffcdd2 solid;
+    background-color: #fcdfdb;
     margin: 0px 20px 0px 0px;
 }
-              /*   la page chic à la française   */
+
 #chic{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items:center;
-    width: 250px;
-    height: 350px;
-    text-align: center;
     border: 1px #ffebee solid;
-    border-radius: 5px;
     background-color: #fff5fe;
     margin-left:25px;
-    box-shadow:  0 0 9px #B0BEC5;
+    
 }
+#delice{
+    border: 1px #F3E5F5 solid;
+    background-color: #fdfffd;
+    margin: 0px 20px 0px 0px;
+}
+#palette{
+    border: 1px #FAFAFA solid;
+    background-color: #fdfffd;
+    margin-left:25px;
+}
+                                                            /*    le dégradé de couleur du chic    */
 #chic h2{
     background: linear-gradient(to right, #d8852e, #905bfd);
     color: transparent;
     background-clip: text;
     -webkit-background-clip: text;
 }
-#delice{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items:center;
-    width: 250px;
-    height: 350px;
-    text-align: center;
-    border: 1px #F3E5F5 solid;
-    border-radius: 5px;
-    background-color: #fdfffd;
-    box-shadow:  0 0 9px #B0BEC5;
-    margin: 0px 20px 0px 0px;
-}
-#palette{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items:center;
-    width: 250px;
-    height: 350px;
-    text-align: center;
-    border: 1px #FAFAFA solid;
-    border-radius: 5px;
-    background-color: #fdfffd;
-    margin-left:25px;
-    box-shadow:  0 0 9px #B0BEC5;
-}
-
+                                           /*    le prochainement    */
 #prochainement{
     width: 23%;
     text-align: center;
@@ -166,6 +145,7 @@ section{
      color: #fdcb46;
      font-size: 1.3em;
 }
+                                                        /*      le pied de page        */
 footer{
     display: flex;
     justify-content: space-between;
