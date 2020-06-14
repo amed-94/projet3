@@ -7,13 +7,13 @@ body{
     margin: auto;
     color: #607D8B;
 }
-main{
+#main{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
-header{
+#ohmyfood{
     background-color: #579c87;
     text-align: center;
     height: 99px;
@@ -22,7 +22,7 @@ header{
     font-family: 'Work Sans', sans-serif;
     font-size: 1.3em;
 }
-section{
+#haut, #bas{
 	display: flex;
 	justify-content: center;
     align-items: center;
@@ -30,107 +30,103 @@ section{
 #haut{
     margin: 40px 0px 40px 0px;
 }
-#bas{
-    
-}
                 /*    les polices  et le dégradé de couleur     */
-#note p{
+#note_un p{
     color: #3D1319;
     font-size: 1.8em;
     margin: 0;
 }
-#note h2{
-    font-family: 'Devonshire', cursive;
+#note_un h2{
+    font-family: 'Dancing Script', cursive;
     color: #3D1319;
+    font-size: 1.9em;
 }
-#chic h2{
-    background: linear-gradient(to right, #d8852e, #905bfd);
+#chic_un h2{
+    background: linear-gradient(to right, #d8852e, #905bfd)no-repeat;
     color: transparent;
     background-clip: text;
     -webkit-background-clip: text;
     font-family: 'Croissant One', cursive;
-    font-size: 1.2em;
+    font-size: 1.3em;
 }
-#chic p{
+#chic_un p{
     color: #c77412;
     font-family: 'DM Serif Display', serif;
     font-size: 1.8em;
     margin: 0;
 }
-#delice h2{
+#delice_un h2{
     background: linear-gradient(to right, #2140df, #0887fb);
     color: transparent;
     background-clip: text;
     -webkit-background-clip: text;
     font-family: 'Dancing Script', cursive;
 }
-#delice p{
+#delice_un p{
     color: #0887fb;
     font-family: 'Paprika', cursive;
     font-size: 1.8em;
     margin: 0;
 }
-#palette h2{
+#palette_un h2{
     background: linear-gradient(to right, #42973c, #bfff7e);
     color: transparent;
     background-clip: text;
     -webkit-background-clip: text;
     font-family: 'Kaushan Script', cursive;
 }
-#palette p{
+#palette_un p{
     color: #72bf56;
     font-family: 'Paprika', cursive;
     font-size: 1.8em;
     margin: 0;
 }
                                  /*    le pictograme de la note   */
-#picto{
+.color{
     background: linear-gradient(to right, #f15861, #f78f6a);
     color: transparent;
     background-clip: text;
-    -webkit-background-clip: text;
+   -webkit-background-clip: text;
 }
+.taille{
+    font-size: 1.9em;
+}
+
                                      /*   les bloques    */
-#note, #chic, #delice, #palette{
+#note_un, #chic_un, #delice_un, #palette_un{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items:center;
-    width: 250px;
-    height: 350px;
+    width: 290px;
+    height: 390px;
     text-align: center;
     border-radius: 5px;
     box-shadow:  0 0 9px #B0BEC5;
 }
-#note{
+#note_un{
     border: 1px #ffcdd2 solid;
     background-color: #fcdfdb;
     margin: 0px 20px 0px 0px;
 }
 
-#chic{
+#chic_un{
     border: 1px #ffebee solid;
     background-color: #fff5fe;
     margin-left:25px;
     
 }
-#delice{
+#delice_un{
     border: 1px #F3E5F5 solid;
-    background-color: #fdfffd;
+    background-color: #EDEFEF;
     margin: 0px 20px 0px 0px;
 }
-#palette{
+#palette_un{
     border: 1px #FAFAFA solid;
-    background-color: #fdfffd;
+    background-color: #FDFFFD;
     margin-left:25px;
 }
-                                                            /*    le dégradé de couleur du chic    */
-#chic h2{
-    background: linear-gradient(to right, #d8852e, #905bfd);
-    color: transparent;
-    background-clip: text;
-    -webkit-background-clip: text;
-}
+
                                            /*    le prochainement    */
 #prochainement{
     width: 23%;
@@ -146,7 +142,7 @@ section{
      font-size: 1.3em;
 }
                                                         /*      le pied de page        */
-footer{
+#position{
     display: flex;
     justify-content: space-between;
     margin-top: 30px;
@@ -156,7 +152,7 @@ footer{
     left: 0;
     right: 0;
 }
-footer a{
+#position a{
     color: #fdcb46;
 }
 
@@ -171,10 +167,7 @@ footer a{
 a{
     text-decoration: none;
 }
-#picto{
-    font-size: 1.9em;
-}
-/*    le responsive      */
+                                                    /*    le responsive      */
 
 @media screen and (max-width: 700px) {
     #haut{
@@ -193,10 +186,10 @@ a{
         width: 30%;
         margin: 40px 0 110px;
     }
-    #note,#delice{
+    #note_un,#delice_un{
         margin: 0 0 40px;
     }
-    #chic,#palette {
+    #chic_un,#palette_un {
         margin: 0;
     } 
 }
@@ -207,7 +200,7 @@ a{
         margin: 40px 0 110px;
     }
     
-    footer{
+    #position{
         display: flex;
         flex-direction: column;
         justify-content: space-around;
@@ -221,5 +214,295 @@ a{
     #contacte{
         margin: 0;
     }
+}
+       /* -----------------------------                    les css pour les pages           ---------------------------------------------------*/ 
+
+
+
+#food a{
+  color: #FFC107;
+  text-decoration: none;
+  font-family: 'Work Sans', sans-serif;
+  font-size: 1.3em;
+}
+#food{
+    background-color: #009688;
+    text-align: center;
+    height: 99px;
+    padding-top: 9px;
+    color: #FFC107;
+}
+                                  /*   pour touts les pages     */
+h2{
+  display: flex;
+  justify-content: center;
+}
+
+#fond{
+  max-width: 800px;
+  width: 90%;
+  height: 100%;
+}
+
+#tete_note{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#mention{
+    margin-left: 15px;
+}
+#contacte{
+    margin-right: 15px;
+}
+
+                                              /*   alignement du menu et le prix     */
+.aligne{
+  display: flex;
+  justify-content:space-between;
+}
+.titre{
+  display: flex;
+  justify-content: center;
+}
+.prix{
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 15px;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+                                        /* la page note enchantée */
+
+
+.picto{
+  font-size: 1.9em;
+  background: linear-gradient(to right, #f15861, #f78f6a);
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  margin-top: 35px;
+}
+main #note{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 900px;
+  width: 80%;
+  height: 950px;
+  margin-bottom: 9%;
+  background-color: #ffcdd2;
+}
+main #note header h2{
+  font-size: 3em;
+  font-family: 'Dancing Script', cursive;
+  margin-top: 0;
+}
+#prelude, #point, #mouvement{
+    font-family: 'Handlee', cursive;
+}
+#footer{
+  display: flex;
+  justify-content: center;
+}
+#footer p{
+    font-family: 'Dancing Script', cursive;
+    font-size: 1.4em;
+}
+#pictograme{
+  font-size: 1.5em;
+  padding-top: 25px;
+  margin-right: 19px;
+  background: linear-gradient(to right, #f15861, #f78f6a);
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+                                        /*  la page chic à la française */
+#chic{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff5fe;
+  max-width: 900px;
+  width: 80%;
+  height: 950px;
+  margin-bottom: 9%;
+}
+#chic header h2 {
+    background: linear-gradient(to right, #d8852e, #905bfd);
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    font-family: 'Croissant One', cursive;
+    font-size: 2.9em;
+}
+#chic p{
+  font-family: 'Gentium Book Basic', serif;
+}
+.interieur{
+    margin: 0 89px 0 89px;
+}
+#chic section {
+    background: linear-gradient( #d8852e, #905bfd);
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+                                    /*   la page le délice des papilles   */
+#delice{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #EDEFEF;
+  max-width: 900px;
+  width: 80%;
+  height: 950px;
+  margin-bottom: 9%;
+}
+#delice header h2{
+    background: linear-gradient(to right, #2140df, #0887fb);
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    font-family: 'Dancing Script', cursive;
+    font-size: 2.9em;
+}
+#commencer, #continuer, #termier{
+    font-family: 'Handlee', cursive;
+}
+                                      /*    la page palette du goût   */
+#palette{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #FDFFFD;
+  max-width: 900px;
+  width: 80%;
+  height: 950px;
+  margin-bottom: 9%;
+}
+#palette header h2{
+    background: linear-gradient(to right, #42973c, #bfff7e);
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    font-family: 'Kaushan Script', cursive;
+    font-size: 2.9em;
+}
+.palette_degrader{
+    background-image: linear-gradient(to right, #42973c, #bfff7e);
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+#esquisse, #oeuvre, #sommet{
+    font-family: 'Handlee', cursive;
+}                                     
+
+                                      /*  positionement des lignes    */
+.ligne{
+  display: flex;
+  justify-content: space-between;
+}
+.gauche{
+  width: 35%;
+  display: flex;
+  justify-content: center;
+} 
+.droite{
+  width: 35%;
+  display: flex;
+  justify-content: center;
+}
+
+                              /*    le responsive      */
+
+@media screen and (max-width: 800px){
+  .aligne p{
+    display: flex;
+    justify-content: center;
+  }
+  .aligne{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;  
+  }
+  .prix{
+    display: flex;
+    justify-content: center;
+    padding: 0;
+  }
+  #position{
+    display: flex;
+    justify-content: space-between;
+    background-color: #2e6f5b;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    }
+     #note, #chic, #delice, #palette{
+      margin-bottom: 115px;
+    }
+    #fond{ 
+    width: 90%;
+    height: 100%;
+  }
+  .h2{
+    font-size: 0.5em
+  }
+}
+
+@media screen and (max-width: 670px){
+  #fond{ 
+    width: 90%;
+    height: 100%;
+  }
+  #mention{
+    margin: 20px 0 0 0;
+  }
+  #contacte{
+    margin: 20px 0 15px 0;
+  }
+  #position{
+    display: flex;
+    justify-content: space-between;
+    background-color: #2e6f5b;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+}
+@media screen and (max-width: 584px){
+  #fond{ 
+    width: 90%;
+    height: 100%;
+  }
+   #note, #chic, #delice, #pallette{
+     width: 100%;
+     margin: 0 0 125px 0;
+  }
+  #position{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #2e6f5b;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+ 
 }
 
