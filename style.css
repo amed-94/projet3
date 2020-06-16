@@ -1,5 +1,5 @@
 
-body{
+body, .titre, .gauche, .droite {
     margin: 0;
 }
 #bloc_page{                                 /*  la page       */
@@ -13,14 +13,16 @@ body{
     align-items: center;
     justify-content: center;
 }
-#ohmyfood{
-    background-color: #579c87;
+#ohmyfood, #food{
+    background-color: #579C87;
     text-align: center;
     height: 99px;
     padding-top: 9px;
-    color: #fdcb46;
     font-family: 'Work Sans', sans-serif;
     font-size: 1.3em;
+}
+#ohmyfood, #food a{
+    color: #FDCB46;
 }
 #haut, #bas{
 	display: flex;
@@ -129,31 +131,35 @@ body{
 
                                            /*    le prochainement    */
 #prochainement{
-    width: 23%;
+    width: 30%;
+    height: 70px;
     text-align: center;
-    margin-top: 25px;
-    background-color: #579c87;
-    border: 1px #009688 solid;
-    border-radius: 15px;
+    background-color: #579C87;
+    border: 1px #579c87 solid;
+    border-radius: 11px;
     margin: 40px 0px 80px 0px;
 }
  #prochainement a{
-     color: #fdcb46;
+     color: #FDCB46;
      font-size: 1.3em;
 }
+    #prochainement p {
+        padding-top: 9px;
+    }
                                                         /*      le pied de page        */
 #position{
     display: flex;
     justify-content: space-between;
     margin-top: 30px;
-    background-color: #579c87;
+    height: 70px;
+    background-color: #579C87;
     position: fixed;
     bottom: 0;
     left: 0;
     right: 0;
 }
 #position a{
-    color: #fdcb46;
+    color: #FDCB46;
 }
 
 #mentions{
@@ -167,71 +173,11 @@ body{
 a{
     text-decoration: none;
 }
-                                                    /*    le responsive      */
 
-@media screen and (max-width: 700px) {
-    #haut{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content:space-between;  
-    }
-    #bas{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-content: center;
-    }
-    #prochainement{
-        width: 30%;
-        margin: 40px 0 110px;
-    }
-    #note_un,#delice_un{
-        margin: 0 0 40px;
-    }
-    #chic_un,#palette_un {
-        margin: 0;
-    } 
-}
-
-@media screen and (max-width: 538px){
-    #prochainement{
-        width: 40%;
-        margin: 40px 0 110px;
-    }
-    
-    #position{
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        align-items: center;
-        height: 80px;
-        
-    }
-    #mentions{
-        margin: 0;
-    }
-    #contacte{
-        margin: 0;
-    }
-}
        /* -----------------------------                    les css pour les pages           ---------------------------------------------------*/ 
 
 
 
-#food a{
-  color: #FFC107;
-  text-decoration: none;
-  font-family: 'Work Sans', sans-serif;
-  font-size: 1.3em;
-}
-#food{
-    background-color: #009688;
-    text-align: center;
-    height: 99px;
-    padding-top: 9px;
-    color: #FFC107;
-}
                                   /*   pour touts les pages     */
 h2{
   display: flex;
@@ -258,6 +204,8 @@ h2{
     margin-right: 15px;
 }
 
+
+
                                               /*   alignement du menu et le prix     */
 .aligne{
   display: flex;
@@ -278,6 +226,10 @@ main{
     align-items: center;
     justify-content: center;
 }
+.colone{
+    display: flex;
+    flex-flow: column;
+}
 
                                         /* la page note enchantée */
 
@@ -290,18 +242,18 @@ main{
   -webkit-background-clip: text;
   margin-top: 35px;
 }
-main #note{
+#note{
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   max-width: 900px;
   width: 80%;
-  height: 950px;
+  height: 1200px;
   margin-bottom: 9%;
   background-color: #ffcdd2;
 }
-main #note header h2{
+#note header h2{
   font-size: 3em;
   font-family: 'Dancing Script', cursive;
   margin-top: 0;
@@ -351,13 +303,18 @@ main #note header h2{
 .interieur{
     margin: 0 89px 0 89px;
 }
-#chic section {
-    background: linear-gradient( #d8852e, #905bfd);
-    color: transparent;
-    background-clip: text;
-    -webkit-background-clip: text;
+#appetit{
+   color: #C67412;
 }
-                                    /*   la page le délice des papilles   */
+#plaisir{
+    color: #A56799;
+}
+#gourmandises{
+    color: #6E4CCC;
+}
+ 
+
+/*   la page le délice des papilles   */
 #delice{
   display: flex;
   justify-content: center;
@@ -410,21 +367,59 @@ main #note header h2{
 
                                       /*  positionement des lignes    */
 .ligne{
-  display: flex;
-  justify-content: space-between;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 4%;
+    margin-top: 9%;
 }
 .gauche{
-  width: 35%;
-  display: flex;
-  justify-content: center;
+    width: 35%;
 } 
 .droite{
-  width: 35%;
-  display: flex;
-  justify-content: center;
+    width: 35%;
+}
+img{
+    width: 100%;
 }
 
-                              /*    le responsive      */
+                              
+
+                                                    /*    le responsive de la pages index     */
+
+@media screen and (max-width: 700px) {
+    #haut{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content:space-between;  
+    }
+    #bas{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+    }
+    #prochainement{
+        width: 30%;
+        margin: 40px 0 110px;
+    }
+    #note_un,#delice_un{
+        margin: 0 0 40px;
+    }
+    #chic_un,#palette_un {
+        margin: 0;
+    } 
+}
+
+@media screen and (max-width: 538px){
+    #prochainement{
+        width: 40%;
+        margin: 40px 0 110px;
+    }
+
+}
+
+                                            /*    le responsive des autre pages     */
 
 @media screen and (max-width: 800px){
   .aligne p{
@@ -451,11 +446,12 @@ main #note header h2{
     right: 0;
     }
      #note, #chic, #delice, #palette{
-      margin-bottom: 115px;
+      height: 1215px;
+      margin-bottom: 90px;
     }
     #fond{ 
     width: 90%;
-    height: 100%;
+    
   }
   .h2{
     font-size: 0.5em
@@ -471,7 +467,7 @@ main #note header h2{
     margin: 20px 0 0 0;
   }
   #contacte{
-    margin: 20px 0 15px 0;
+    margin: 20px 20px 0 0;
   }
   #position{
     display: flex;
@@ -488,10 +484,14 @@ main #note header h2{
     width: 90%;
     height: 100%;
   }
-   #note, #chic, #delice, #pallette{
+   #note, #chic, #delice, #palette{
      width: 100%;
-     margin: 0 0 125px 0;
+     height: 100%;
+     margin: 0 0 150px 0;
   }
+   .aligne{
+      margin: 0;
+   }
   #position{
     display: flex;
     flex-direction: column;
@@ -502,7 +502,20 @@ main #note header h2{
     bottom: 0;
     left: 0;
     right: 0;
+    height: 80px;
   }
- 
+  #contacte{
+    margin: 0 0 15px 25px;
+  }
 }
-
+@media screen and (max-width: 320px){
+    #palette{
+        margin: 0 0 100px 0;
+    }
+    .interieur{
+        margin: 0;
+    }
+    #prochainement{                     /*   la pages index    */
+       width: 70%;
+    }
+}
