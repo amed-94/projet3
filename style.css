@@ -7,12 +7,7 @@ body, .titre, .gauche, .droite {
     margin: auto;
     color: #607D8B;
 }
-#main{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
+
 #ohmyfood, #food{
     background-color: #579C87;
     text-align: center;
@@ -24,15 +19,17 @@ body, .titre, .gauche, .droite {
 #ohmyfood, #food a{
     color: #FDCB46;
 }
-#haut, #bas{
-	display: flex;
-	justify-content: center;
-    align-items: center;
-}
+
 #haut{
     margin: 40px 0px 40px 0px;
 }
                 /*    les polices  et le dégradé de couleur     */
+#chic_un h2{
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+
 #note_un p{
     color: #3D1319;
     font-size: 1.8em;
@@ -88,7 +85,7 @@ body, .titre, .gauche, .droite {
     background: linear-gradient(to right, #f15861, #f78f6a);
     color: transparent;
     background-clip: text;
-   -webkit-background-clip: text;
+    -webkit-background-clip: text;
 }
 .taille{
     font-size: 1.9em;
@@ -96,10 +93,6 @@ body, .titre, .gauche, .droite {
 
                                      /*   les bloques    */
 #note_un, #chic_un, #delice_un, #palette_un{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items:center;
     width: 290px;
     height: 390px;
     text-align: center;
@@ -133,9 +126,6 @@ body, .titre, .gauche, .droite {
 
                                            /*    le prochainement    */
 .prochainement{
-    display: flex;
-    justify-content: center;
-    align-items: center;
     width: 30%;
     height: 70px;
     text-align: center;
@@ -150,7 +140,6 @@ body, .titre, .gauche, .droite {
 }
                                                         /*      le pied de page        */
 #position{
-    display: flex;
     justify-content: space-between;
     margin-top: 30px;
     height: 70px;
@@ -175,6 +164,21 @@ body, .titre, .gauche, .droite {
 a{
     text-decoration: none;
 }
+                                        /*       les display            */
+#palette, .prochainement, #note, #chic, #delice, #haut, #bas, #note_un, #chic_un, #delice_un, #palette_un, #position, h2, .titre, #tete_note, .colone, main, #footer{
+    display: flex;
+}
+
+#palette, .prochainement, #note, #chic, #delice, #haut, #bas, #note_un, #chic_un, #delice_un, #palette_un, h2, .titre, #tete_note, main, #footer{
+    justify-content: center;
+    align-items: center; 
+}
+
+#note_un, #chic_un, #delice_un, #palette_un, #tete_note, .colone, main{
+    flex-direction: column;
+}
+
+
                                         /*      les annimation         */
 
 
@@ -183,7 +187,7 @@ a{
 }
 .soulgne{
     color: inherit;
-    background: linear-gradient(to top, rgba(61, 19, 25, 0.5) 0%, rgba(61, 19, 25, 0.5) 10%, transparent 10.01%) no-repeat left bottom / 0 100%;
+    background: linear-gradient(to top, rgba(61, 19, 25, 0.9) 0%, rgba(61, 19, 25, 0.9) 10%, transparent 10.01%) no-repeat left bottom / 0 100%;
     transition: background-size 400ms;
 }
 .soulgne:hover{
@@ -191,7 +195,7 @@ a{
 }
                                         /*       L'effet wiggle           */
 #mentions:hover, #contacte:hover{
-    animation: shake 0.82s ease-in-out/*cubic-bezier(.36,.07,.19,.97) both*/; 
+    animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both; 
     transform: translate3d(0, 0, 0); 
     backface-visibility: hidden; 
     perspective: 1000px; 
@@ -247,22 +251,12 @@ a{
 
 
                                   /*   pour touts les pages     */
-h2{
-  display: flex;
-  justify-content: center;
-}
+
 
 #fond{
   max-width: 800px;
   width: 90%;
   height: 100%;
-}
-
-#tete_note{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
 }
 
 #mention{
@@ -279,25 +273,14 @@ h2{
   display: flex;
   justify-content:space-between;
 }
-.titre{
-  display: flex;
-  justify-content: center;
-}
+
 .prix{
   display: flex;
   justify-content: flex-end;
   padding-top: 15px;
 }
-main{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-.colone{
-    display: flex;
-    flex-flow: column;
-}
+
+
 
                                         /* la page note enchantée */
 
@@ -311,10 +294,6 @@ main{
   margin-top: 35px;
 }
 #note{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   max-width: 900px;
   width: 80%;
   height: 1200px;
@@ -329,10 +308,7 @@ main{
 #prelude, #point, #mouvement{
     font-family: 'Handlee', cursive;
 }
-#footer{
-  display: flex;
-  justify-content: center;
-}
+
 #footer p{
     font-family: 'Dancing Script', cursive;
     font-size: 1.4em;
@@ -348,9 +324,6 @@ main{
 }
                                         /*  la page chic à la française */
 #chic{
-  display: flex;
-  justify-content: center;
-  align-items: center;
   background-color: #fff5fe;
   max-width: 900px;
   width: 80%;
@@ -384,9 +357,6 @@ main{
 
 /*   la page le délice des papilles   */
 #delice{
-  display: flex;
-  justify-content: center;
-  align-items: center;
   background-color: #EDEFEF;
   max-width: 900px;
   width: 80%;
@@ -406,9 +376,6 @@ main{
 }
                                       /*    la page palette du goût   */
 #palette{
-  display: flex;
-  justify-content: center;
-  align-items: center;
   background-color: #FDFFFD;
   max-width: 900px;
   width: 80%;
@@ -470,17 +437,11 @@ img{
                                                     /*    le responsive de la pages index     */
 
 @media screen and (max-width: 700px) {
-    #haut{
+    #haut, #bas{
         display: flex;
         flex-direction: column;
         align-items: center;
-        justify-content:space-between;  
-    }
-    #bas{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-content: center;
+        justify-content:center;  
     }
     #prochainement{
         width: 30%;
