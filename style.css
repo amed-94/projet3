@@ -7,14 +7,12 @@ body, .titre, .gauche, .droite {
     margin: auto;
     color: #607D8B;
 }
-
 #ohmyfood, #food{
     background-color: #579C87;
-    text-align: center;
-    height: 99px;
-    padding-top: 9px;
     font-family: 'Work Sans', sans-serif;
     font-size: 1.3em;
+    height: 115px;
+       
 }
 #ohmyfood, #food a{
     color: #FDCB46;
@@ -165,11 +163,11 @@ a{
     text-decoration: none;
 }
                                         /*       les display            */
-#palette, .prochainement, #note, #chic, #delice, #haut, #bas, #note_un, #chic_un, #delice_un, #palette_un, #position, h2, .titre, #tete_note, .colone, main, #footer{
+#palette, .prochainement, #note, #chic, #delice, #haut, #bas, #note_un, #chic_un, #delice_un, #palette_un, #position, h2, .titre, #tete_note, .colone, main, #footer, #ohmyfood, #food{
     display: flex;
 }
 
-#palette, .prochainement, #note, #chic, #delice, #haut, #bas, #note_un, #chic_un, #delice_un, #palette_un, h2, .titre, #tete_note, main, #footer{
+#palette, .prochainement, #note, #chic, #delice, #haut, #bas, #note_un, #chic_un, #delice_un, #palette_un, h2, .titre, #tete_note, main, #footer, #ohmyfood, #food{
     justify-content: center;
     align-items: center; 
 }
