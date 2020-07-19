@@ -8,22 +8,30 @@
 	<title>Contacte</title>
 </head>
 <body>
-	<header id="food">														<!-- l'entête de la page !-->
+	<header class="food">														<!-- l'entête de la page !-->
 		<h1><a href="../index.html">ohmyfood</a></h1>
 	</header>
 	<main class="contacte">
-		<div>
-			<label for="Nom">Nom
-				<input type="text" name="nom">
-			</label>
-			<label for="Nom">Prènom
-				<input type="text" name="prènom">
-			</label>
-			<label for="Nom">Mail
-				<input type="email" name="" placeholder="agdv@">
-			</label>
-			<textarea>Votre message</textarea>
-			<input type="submit" value="Envoyer">
+		<div class="contacte--actif">
+			<div>
+				<label for="Nom">Nom :
+					<input type="text" name="nom" class="input">
+				</label>
+			</div>
+			<div>
+				<label for="Nom">Prènom :
+					<input type="text" name="prènom" class="input_2">
+				</label>
+			</div>
+			<div>
+				<label for="Nom">Mail :
+					<input type="email" name="" placeholder="agdv@" class="input_3">
+				</label>
+			</div>
+			<textarea value="votre message"></textarea>
+			<div class="bouton">
+				<input type="submit" value="Envoyer">
+			</div>
 		</div>
 	</main>
 </body>
