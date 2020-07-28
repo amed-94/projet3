@@ -22,6 +22,12 @@ main {
   justify-content: center;
   align-items: center; }
 
+.fas.fa-music {
+  background: -webkit-linear-gradient(10deg, #f15861, #f78f6a);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 1.9em; }
+
 #bloc_page-un {
   width: 100%;
   margin: auto;
@@ -61,12 +67,6 @@ main {
     #bloc_page-un #note_un h2 {
       font-family: 'Dancing Script', cursive;
       color: #3D1319;
-      font-size: 1.9em; }
-    #bloc_page-un #note_un .color {
-      background: -webkit-linear-gradient(10deg, #f15861, #f78f6a);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent; }
-    #bloc_page-un #note_un .taille {
       font-size: 1.9em; }
     #bloc_page-un #note_un .zoom:hover {
       transform: scale(1.15);

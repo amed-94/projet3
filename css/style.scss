@@ -23,6 +23,12 @@ main{
   	justify-content: center;
   	align-items: center;
 }
+.fas.fa-music{
+      background: -webkit-linear-gradient(10deg, #f15861, #f78f6a);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      font-size: 1.9em;
+    }
 #bloc_page-un{                                 
     width: 100%;
     margin: auto;
@@ -67,14 +73,6 @@ main{
     		color: #3D1319;
     		font-size: 1.9em;
     	}
-    	.color{
-    		background: -webkit-linear-gradient(10deg, #f15861, #f78f6a);
-    		-webkit-background-clip: text;
-    		-webkit-text-fill-color: transparent;
-		}
-		.taille{
-    		font-size: 1.9em;
-		}
     	.zoom{
     		&:hover {
         		transform: scale(1.15);
