@@ -1,0 +1,669 @@
+						/*  la page       */
+
+body, .titre, .gauche, .droite {
+    margin: 0;
+}
+a{
+    text-decoration: none;
+}
+#ohmyfood, .food{
+    	display: flex;
+    	justify-content: center;
+  		align-items: center;
+    	background-color: #579C87;
+    	height: 115px;
+    	h1,a{
+    		color: #FDCB46;
+    		font-family: 'Work Sans', sans-serif;
+    	}
+}
+main{
+	display: flex;
+  	flex-direction: column;
+  	justify-content: center;
+  	align-items: center;
+}
+#bloc_page-un{                                 
+    width: 100%;
+    margin: auto;
+    color: #607D8B;
+    main{
+    	display: flex;
+  		flex-direction: column;
+  		justify-content: center;
+  		align-items: center;
+    }
+    #haut, #bas{
+    	display: flex;
+    	justify-content: center;
+    	align-items: center;
+    	margin: 40px 0px 40px 0px;
+	}
+	#chic_un, #note_un, #delice_un, #palette_un{
+  		display: flex;
+  		flex-direction: column;
+  		justify-content: center;
+  		align-items: center;
+  		width: 290px;
+    	height: 390px;
+    	text-align: center;
+    	border-radius: 5px;
+    	box-shadow:  0 0 9px #B0BEC5;
+	}
+	#note_un{
+    	border: 1px #ffcdd2 solid;
+    	background-color: #fcdfdb;
+    	margin: 0px 20px 0px 0px;
+    	transform: scale(1);
+    	transition-property: transform;
+    	transition-duration: 400ms;
+    	p{
+    		color: #3D1319;
+    		font-size: 1.8em;
+    		margin: 0;
+    	}
+    	h2{
+    		font-family: 'Dancing Script', cursive;
+    		color: #3D1319;
+    		font-size: 1.9em;
+    	}
+    	.color{
+    		background: -webkit-linear-gradient(10deg, #f15861, #f78f6a);
+    		-webkit-background-clip: text;
+    		-webkit-text-fill-color: transparent;
+		}
+		.taille{
+    		font-size: 1.9em;
+		}
+    	.zoom{
+    		&:hover {
+        		transform: scale(1.15);
+        		opacity: 0.6;
+    		}
+    	}
+	}
+
+	#chic_un{
+    	border: 1px #ffebee solid;
+    	background-color: #fff5fe;
+    	margin-left:25px;
+    	transform: scale(1);
+    	transition-property: transform;
+    	transition-duration: 400ms;
+ 		h2{
+    		font-family: 'Croissant One', cursive;
+    		font-size: 1.3em;
+    		background: -webkit-linear-gradient(10deg, #d8852e, #905bfd);
+    		-webkit-background-clip: text;
+    		-webkit-text-fill-color: transparent;
+		}
+		p{
+    		color: #c77412;
+    		font-family: 'DM Serif Display', serif;
+    		font-size: 1.8em;
+    		margin: 0;
+		}
+		.zoom{
+    		&:hover {
+        		transform: scale(1.15);
+        		opacity: 0.6;
+    		}
+    	}
+	}
+	#delice_un{
+    	border: 1px #F3E5F5 solid;
+    	background-color: #EDEFEF;
+    	margin: 0px 20px 0px 0px;
+    	transform: scale(1);
+    	transition-property: transform;
+    	transition-duration: 400ms;
+    	h2{
+    		font-family: 'Dancing Script', cursive;
+    		background: -webkit-linear-gradient(10deg, #2140df, #0887fb);
+    		-webkit-background-clip: text;
+    		-webkit-text-fill-color: transparent;
+		}
+		p{
+    		color: #0887fb;
+    		font-family: 'Paprika', cursive;
+    		font-size: 1.8em;
+    		margin: 0;
+		}
+		.zoom{
+    		&:hover {
+        		transform: scale(1.15);
+        		opacity: 0.6;
+    		}
+    	}
+	}
+	#palette_un{
+    	border: 1px #FAFAFA solid;
+    	background-color: #FDFFFD;
+    	margin-left:25px;
+    	transform: scale(1);
+    	transition-property: transform;
+    	transition-duration: 400ms;
+    	h2{
+    		font-family: 'Kaushan Script', cursive;
+   			background: -webkit-linear-gradient(10deg, #42973c, #bfff7e);
+    		-webkit-background-clip: text;
+    		-webkit-text-fill-color: transparent;
+		}
+		p{
+    		color: #72bf56;
+    		font-family: 'Paprika', cursive;
+    		font-size: 1.8em;
+    		margin: 0;
+		}
+		.zoom{
+    		&:hover {
+        		transform: scale(1.15);
+        		opacity: 0.6;
+    		}
+    	}
+	}
+	.prochainement{
+		display: flex;
+		justify-content: center;
+    	align-items: center;
+    	width: 30%;
+    	height: 70px;
+    	text-align: center;
+    	background-color: #579C87;
+    	border: 1px #579c87 solid;
+    	border-radius: 11px;
+    	margin: 40px 0px 80px 0px;
+    	a{
+     		color: #FDCB46;
+     		font-size: 1.3em;
+		}
+		.point-suspension > div{
+    		width: 0.3rem;
+    		height: 0.3rem;
+    		background-color: #FDCB46;
+    		border-radius: 50%;
+    		display: inline-block;
+    		animation: 1.5s bounce infinite ease-in-out both;
+		}
+		.point-suspension{
+			padding-left:  2%;
+			.point{
+    			animation-delay: -0.30s;
+			}
+			.point2{
+    			animation-delay: -0.15s;
+			}
+		}
+		@keyframes bounce{
+    		0%,80%,100%{
+        		transform: scale(0);
+    		}
+    		40%{
+        	transform: scale(1);
+    		}
+		}
+		
+	}
+	/*	le responsive page index	*/
+	@media screen and (max-width: 700px) {
+    	#haut, #bas{
+	        display: flex;
+	        flex-direction: column;
+	        align-items: center;
+	        justify-content:center;  
+    	}
+	    .prochainement{
+	        width: 30%;
+	        margin: 40px 0 110px;
+	    }
+	    #note_un,#delice_un{
+	        margin: 0 0 40px;
+	    }
+	    #chic_un,#palette_un {
+	        margin: 0;
+	    } 
+	}
+
+	@media screen and (max-width: 538px){
+	    .prochainement{
+	        width: 45%;
+	        margin: 40px 0 110px;
+	    }
+
+	}
+	@media screen and (max-width: 508px){
+	    .prochainement{
+	        width: 55%;
+	    }
+
+	}
+}
+#position{
+	display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    height: 70px;
+    background-color: #579C87;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    a{
+    	color: #FDCB46;
+	}
+}
+#mentions{
+    margin-left: 35px;
+    font-size: 1.3em;
+    &:hover{
+    	animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both; 
+    	transform: translate3d(0, 0, 0); 
+    	backface-visibility: hidden; 
+    	perspective: 1000px; 
+	}
+}
+#contacte{
+    margin-right: 35px;
+    font-size: 1.3em;
+    &:hover{
+    animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both; 
+    transform: translate3d(0, 0, 0); 
+    backface-visibility: hidden; 
+    perspective: 1000px; 
+}
+@keyframes shake { 
+    10%, 90% { 
+    transform: translate3d(-1px, 0, 0); 
+    } 
+
+    20%, 80% { 
+    transform: translate3d(2px, 0, 0); 
+    } 
+
+    30%, 50%, 70% { 
+    transform: translate3d(-4px, 0, 0); 
+    } 
+
+    40%, 60% { 
+    	transform: translate3d(4px, 0, 0); 
+    	} 
+	}
+}
+/*		les page		*/
+
+#fond{
+  max-width: 800px;
+  width: 90%;
+  height: 100%;
+}
+.aligne{
+  display: flex;
+  justify-content:space-between;
+}
+
+.prix{
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 15px;
+}
+.ligne{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 4%;
+    margin-top: 9%;
+}
+.gauche{
+    width: 35%;
+} 
+.droite{
+    width: 35%;
+}
+img{
+    width: 100%;
+}
+.centrer{
+	text-align: center;
+}
+.interieur{
+    margin: 0 89px 0 89px;
+}
+/*	la page note enchantée	*/
+
+
+.note{
+	display: flex;
+	justify-content: center;
+    align-items: center; 
+  	max-width: 900px;
+  	width: 80%;
+  	height: 1200px;
+  	margin-bottom: 9%;
+  	background-color: #ffcdd2;
+  	.tete_note{
+  		display: flex;
+  		flex-direction: column;
+  		justify-content: center;
+  		align-items: center;
+  	}
+  	header h2{
+  		font-size: 3em;
+  		font-family: 'Dancing Script', cursive;
+  		margin-top: 0;
+  		text-align: center;
+  	}
+  	.picto{
+  		font-size: 1.9em;
+	  	background: linear-gradient(to right, #f15861, #f78f6a);
+	  	color: transparent;
+	  	background-clip: text;
+	  	-webkit-background-clip: text;
+	  	margin-top: 35px;
+	}
+  	#pictograme{
+  		font-size: 1.5em;
+  		padding-top: 25px;
+		margin-right: 19px;
+		background: linear-gradient(to right, #f15861, #f78f6a);
+		color: transparent;
+		background-clip: text;
+		-webkit-background-clip: text;
+	}
+	#prelude, #point, #mouvement{
+    	font-family: 'Handlee', cursive;
+	}
+	#footer{
+		display: flex;
+		justify-content: center;
+    	align-items: center;
+    	p{
+    		font-family: 'Dancing Script', cursive;
+   			font-size: 1.4em;
+		}
+	}
+	.soulgne{
+    	color: inherit;
+    	background: linear-gradient(to top, rgba(61, 19, 25, 0.9) 0%, rgba(61, 19, 25, 0.9) 10%, transparent 10.01%) no-repeat left bottom / 0 100%;
+    	transition: background-size 400ms;
+    	&:hover{
+    			background-size: 100% 100%;
+			}
+	}
+}
+
+
+/*	la page le chic à la francaise	*/
+
+.chic{
+	display: flex;
+	justify-content: center;
+    align-items: center; 
+	background-color: #fff5fe;
+  	max-width: 900px;
+  	width: 80%;
+  	height: 950px;
+  	margin-bottom: 9%;
+  	header h2 {
+	    font-family: 'Croissant One', cursive;
+	    font-size: 2.9em;
+	    text-align: center;
+	    background: -webkit-linear-gradient(10deg, #d8852e, #905bfd);
+	    -webkit-background-clip: text;
+	    -webkit-text-fill-color: transparent;
+	}
+	p{
+  		font-family: 'Gentium Book Basic', serif;
+	}
+	#appetit{
+   		color: #C67412;
+   		.soulgne{
+    		color: inherit;
+    		background: linear-gradient(to top, rgba(198, 116, 18, 0.9) 0%, rgba(198, 116, 18, 0.9) 10%, transparent 10.01%) no-repeat left bottom / 0 100%;
+    		transition: background-size 400ms;
+    		&:hover{
+    			background-size: 100% 100%;
+			}
+		}
+	}
+	#plaisir{
+    	color: #A56799;
+    	.soulgne{
+    		color: inherit;
+    		background: linear-gradient(to top, rgba(165, 103, 153, 0.9) 0%, rgba(165, 103, 153, 0.9) 10%, transparent 10.01%) no-repeat left bottom / 0 100%;
+    		transition: background-size 400ms;
+    		&:hover{
+    			background-size: 100% 100%;
+			}
+		}
+	}
+	#gourmandises{
+    	color: #6E4CCC;
+    	.soulgne{
+    		color: inherit;
+    		background: linear-gradient(to top, rgba(110, 76, 204, 0.9) 0%, rgba(110, 76, 204, 0.9) 10%, transparent 10.01%) no-repeat left bottom / 0 100%;
+    		transition: background-size 400ms;
+    		&:hover{
+    			background-size: 100% 100%;
+			}
+		}
+	}
+}
+
+/*	la page le délice des papilles	*/
+
+
+.delice{
+	display: flex;
+	justify-content: center;
+    align-items: center; 
+	background-color: #EDEFEF;
+  	max-width: 900px;
+  	width: 80%;
+  	height: 950px;
+  	margin-bottom: 9%;
+  	header h2{
+	    font-family: 'Dancing Script', cursive;
+	    font-size: 2.9em;
+	    text-align: center;
+	    background: -webkit-linear-gradient(10deg, #2140df, #0887fb);
+	    -webkit-background-clip: text;
+	    -webkit-text-fill-color: transparent;
+	}
+	#commencer, #continuer, #termier{
+    	font-family: 'Handlee', cursive;
+	}
+	#commencer{
+		.soulgne{
+    		color: inherit;
+    		background: linear-gradient(to top, rgba(2, 40, 221, 0.9) 0%, rgba(2, 40, 221, 0.9) 10%, transparent 10.01%) no-repeat left bottom / 0 100%;
+    		transition: background-size 400ms;
+    		&:hover{
+    			background-size: 100% 100%;
+			}
+		}
+	}
+	#continuer{
+		.soulgne{
+    		color: inherit;
+    		background: linear-gradient(to top, rgba(6, 112, 243, 0.9) 0%, rgba(6, 112, 243, 0.9) 10%, transparent 10.01%) no-repeat left bottom / 0 100%;
+    		transition: background-size 400ms;
+    		&:hover{
+    			background-size: 100% 100%;
+			}
+		}
+	}
+	#termier{
+		.soulgne{
+    		color: inherit;
+    		background: linear-gradient(to top, rgba(137, 199, 245, 0.9) 0%, rgba(137, 199, 245, 0.9) 10%, transparent 10.01%) no-repeat left bottom / 0 100%;
+    		transition: background-size 400ms;
+    		&:hover{
+    			background-size: 100% 100%;
+			}
+		}
+		
+	}
+}
+
+/*	la page la pallette du goût	*/
+
+.palette{
+	display: flex;
+	justify-content: center;
+    align-items: center; 
+	background-color: #FDFFFD;
+  	max-width: 900px;
+  	width: 80%;
+  	height: 950px;
+  	margin-bottom: 9%;
+  	header h2{
+	    font-family: 'Kaushan Script', cursive;
+	    font-size: 2.9em;
+	    text-align: center;
+	    background: -webkit-linear-gradient(10deg, #42973c, #bfff7e);
+	    -webkit-background-clip: text;
+	    -webkit-text-fill-color: transparent;
+	}
+	#esquisse, #oeuvre, #sommet{
+    	font-family: 'Handlee', cursive;
+	}
+	.soulgne{
+    	color: inherit;
+    	background: linear-gradient(to top, rgba(66, 151, 60, 0.9) 0%, rgba(66, 151, 60, 0.9) 10%, transparent 10.01%) no-repeat left bottom / 0 100%;
+    	transition: background-size 400ms;
+    	&:hover{
+    		background-size: 100% 100%;
+		}
+	}
+		
+}
+/*	la page contacte nous	*/
+.contacte{
+	padding-top:50px;
+	.contacte--actif{
+		display: flex;
+		flex-direction: column;
+		height: 500px;
+		width: 35%;
+		border-radius: 20px;
+		box-shadow:  0 0 9px #B0BEC5;
+		label{
+			margin-left: 25px;
+		}
+    }
+    input{
+    	margin: 7%;
+
+    }
+    .input{
+    	margin-left: 45px;
+    	
+    }
+    .input_3{
+    	margin-left: 45px;
+    }
+    textarea{
+    	height: 100px;
+    }
+    .bouton{
+    	display: flex;
+		justify-content: center;
+    	align-items: center;
+    	margin: auto;
+    	input{
+    		width: 100%;	
+    		height: 25px;
+    	}
+    	
+    }
+}
+
+/*	les responsive	*/
+
+
+@media screen and (max-width: 800px){
+  .aligne p{
+    display: flex;
+    justify-content: center;
+  }
+  .aligne{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;  
+  }
+  .prix{
+    display: flex;
+    justify-content: center;
+    padding: 0;
+  }
+    .note, .chic, .delice, .palette{
+      height: 100%;
+      margin-bottom: 150px;
+    }
+    #fond{ 
+    	width: 90%;
+  	}
+  	.contacte{
+  		.contacte--actif{
+  			width: 90%;
+  		}
+  		
+  	}
+  	
+}
+@media screen and (max-width: 792px){
+	.ligne{
+	  text-align: center;
+	}
+
+}
+@media screen and (max-width: 670px){
+  	#fond{ 
+    	width: 90%;
+    	height: 100%;
+  	}
+  	#mention{
+    	margin: 20px 0 0 0;
+  	}
+  	#contacte{
+    	margin: 20px 20px 0 0;
+  	}
+}
+@media screen and (max-width: 584px){
+   .note, .chic, .delice, .palette{
+     width: 100%;
+     height: 100%;
+  }
+   .aligne{
+      margin: 0;
+   }
+  #position{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 80px;
+  }
+  #contacte{
+    margin: 0 0 15px 35px;
+  }
+   .interieur{
+        margin: 0;
+    }
+}
+@media screen and (max-width: 320px){
+    #prochainement{                     /*   la pages index    */
+       width: 70%;
+    }
+    .contacte{
+  		.contacte--actif{
+  			width: 100%;
+  		}
+  		
+  	}
+}
+
+
