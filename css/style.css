@@ -1,4 +1,6 @@
 @charset "UTF-8";
+/*   les vaariables     */
+/*      Mixin   */
 /*  la page       */
 body, .titre, .gauche, .droite {
   margin: 0; }
@@ -54,7 +56,7 @@ main {
     border-radius: 5px;
     box-shadow: 0 0 9px #B0BEC5; }
   #bloc_page-un #note_un {
-    border: 1px #ffcdd2 solid;
+    border: 1px #fcdfdb solid;
     background-color: #fcdfdb;
     margin: 0px 20px 0px 0px;
     transform: scale(1);
@@ -72,7 +74,7 @@ main {
       transform: scale(1.15);
       opacity: 0.6; }
   #bloc_page-un #chic_un {
-    border: 1px #ffebee solid;
+    border: 1px #fff5fe solid;
     background-color: #fff5fe;
     margin-left: 25px;
     transform: scale(1);
@@ -93,7 +95,7 @@ main {
       transform: scale(1.15);
       opacity: 0.6; }
   #bloc_page-un #delice_un {
-    border: 1px #F3E5F5 solid;
+    border: 1px #EDEFEF solid;
     background-color: #EDEFEF;
     margin: 0px 20px 0px 0px;
     transform: scale(1);
@@ -113,7 +115,7 @@ main {
       transform: scale(1.15);
       opacity: 0.6; }
   #bloc_page-un #palette_un {
-    border: 1px #FAFAFA solid;
+    border: 1px #FDFFFD solid;
     background-color: #FDFFFD;
     margin-left: 25px;
     transform: scale(1);
@@ -168,8 +170,8 @@ main {
     #bloc_page-un #haut, #bloc_page-un #bas {
       display: flex;
       flex-direction: column;
-      align-items: center;
-      justify-content: center; }
+      justify-content: center;
+      align-items: center; }
     #bloc_page-un .prochainement {
       width: 30%;
       margin: 40px 0 110px; }
@@ -215,6 +217,7 @@ main {
     transform: translate3d(0, 0, 0);
     backface-visibility: hidden;
     perspective: 1000px; }
+
 @keyframes shake {
   10%, 90% {
     transform: translate3d(-1px, 0, 0); }
@@ -269,7 +272,7 @@ img {
   width: 80%;
   height: 1200px;
   margin-bottom: 9%;
-  background-color: #ffcdd2; }
+  background-color: #fcdfdb; }
   .note .tete_note {
     display: flex;
     flex-direction: column;
@@ -281,20 +284,10 @@ img {
     margin-top: 0;
     text-align: center; }
   .note .picto {
-    font-size: 1.9em;
-    background: linear-gradient(to right, #f15861, #f78f6a);
-    color: transparent;
-    background-clip: text;
-    -webkit-background-clip: text;
     margin-top: 35px; }
   .note #pictograme {
-    font-size: 1.5em;
-    padding-top: 25px;
-    margin-right: 19px;
-    background: linear-gradient(to right, #f15861, #f78f6a);
-    color: transparent;
-    background-clip: text;
-    -webkit-background-clip: text; }
+    padding-top: 15px;
+    margin-right: 19px; }
   .note #prelude, .note #point, .note #mouvement {
     font-family: 'Handlee', cursive; }
   .note #footer {
